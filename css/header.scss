@@ -3,11 +3,15 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+body{
+  font-family: Montserrat;
+  padding: 0;
+  margin: 0;
+}
+
+header{  
+  flex-grow: 0;
+  flex-shrink: 0;
   background: rgba(20, 63, 131, 1) 100%;
 
   .navbar {
@@ -25,26 +29,14 @@
       display: inline-block;
       padding: 0.5em 1.5em;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-body {
-  font-family: Montserrat;
-  padding: 0;
-  margin: 0;
-
-  header {
-    img {
-      width: 64px;
-    }
     font-size: 16px;
     a:visited,
     a:link {
       color: #ffffff;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -76,30 +68,31 @@ body {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding-right: 10px;
   }
 
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 5rem;
+    left: -110%;
+    top: 1.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    .nav-item {
+      a:visited,
+      a:link {
+        color: rgba(20, 63, 131, 1);
+      }
+    }
   }
 
   .nav-menu.active {
     left: 0;
-  }
-
-  .nav-item {
-    a:visited,
-    a:link {
-      color: rgba(20, 63, 131, 1);
-    }
+    margin: 16px 0;
+    padding:0;
   }
 
   .hamburger {

@@ -1,3 +1,17 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,4 +19,4 @@ body {
 
 .container {
   flex-grow: 1;
-}
+}/*# sourceMappingURL=home.css.map */

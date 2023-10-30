@@ -2,47 +2,40 @@
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Bold.ttf);
 }
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background: rgb(20, 63, 131) 100%;
-}
-.header .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .navbar ul {
-  text-align: center;
-}
-.header .navbar li {
-  display: inline;
-}
-.header .navbar a {
-  display: inline-block;
-  padding: 0.5em 1.5em;
-}
-.header .navbar a:hover {
-  text-decoration: underline;
-}
-
 body {
   font-family: Montserrat;
   padding: 0;
   margin: 0;
 }
-body header {
+
+header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: rgb(20, 63, 131) 100%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
 }
-body header img {
-  width: 64px;
+header .navbar ul {
+  text-align: center;
 }
-body header a:visited,
-body header a:link {
+header .navbar li {
+  display: inline;
+}
+header .navbar a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+header .navbar a:visited,
+header .navbar a:link {
   color: #ffffff;
   text-decoration: none;
+}
+header .navbar a:hover {
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -71,25 +64,27 @@ body header a:link {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding-right: 10px;
   }
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 5rem;
+    left: -110%;
+    top: 1.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
+  .nav-menu .nav-item a:visited,
+  .nav-menu .nav-item a:link {
+    color: rgb(20, 63, 131);
+  }
   .nav-menu.active {
     left: 0;
-  }
-  .nav-item a:visited,
-  .nav-item a:link {
-    color: rgb(20, 63, 131);
+    margin: 16px 0;
+    padding: 0;
   }
   .hamburger {
     display: block;
