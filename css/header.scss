@@ -19,6 +19,13 @@ header{
     justify-content: space-between;
     align-items: center;
 
+    .nav-logo{
+      display: flex;
+      align-items: center;
+      img{
+        width: 64px;
+      }
+    }
     ul {
       text-align: center;
     }
@@ -58,11 +65,51 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .nav-item{
+    form{
+        position: relative;
+        width: 100%;
+
+      input, button {
+        border: none;
+        outline: none;
+        border-radius: 3px;
+      }
+      input {
+        width: 80%;
+        height: 42px;
+        background: #fff;
+        padding-left: 15px;
+      }
+      button {
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        background: rgba(20, 63, 131, 1) 100%;
+        cursor: pointer;
+      }
+      button:before {
+        content: "\f105";
+        font-family: FontAwesome;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
   .main-header {
     justify-content: space-between;
+  }
+
+  .nav-menu > .nav-item > form > input{
+    border: 2px solid rgba(20, 63, 131, 1);
+    border-radius: 5px;   
+    color: rgba(20, 63, 131, 1);
   }
 
   .hamburger {
@@ -74,7 +121,7 @@ header{
   .nav-menu {
     position: fixed;
     left: -110%;
-    top: 1.5rem;
+    top: 4rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -93,6 +140,7 @@ header{
     left: 0;
     margin: 16px 0;
     padding:0;
+    padding-bottom: 10px;
   }
 
   .hamburger {
