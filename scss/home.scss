@@ -1,6 +1,17 @@
-html, body {
+html,
+body {
   box-sizing: border-box;
   height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+* {
   padding: 0;
   margin: 0;
 }
@@ -13,10 +24,12 @@ html, body {
 }
 
 body {
+  font-family: Montserrat;
+
   display: flex;
   flex-direction: column;
 }
 
 .container {
   flex-grow: 1;
-}/*# sourceMappingURL=home.css.map */
+}
