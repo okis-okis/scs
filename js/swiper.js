@@ -6,9 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const swiper = new Swiper(".swiper-container", {
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 10,
   loop: true,
-  slidesPerView: 3,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -19,4 +19,14 @@ const swiper = new Swiper(".swiper-container", {
   mousewheel: true,
   keyboard: true,
   modules: [Navigation],
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  }
 });
