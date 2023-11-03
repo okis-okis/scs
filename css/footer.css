@@ -4,6 +4,7 @@ footer {
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: space-between;
+  font-size: 14px;
 }
 footer ul {
   text-align: center;
