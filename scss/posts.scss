@@ -1,0 +1,129 @@
+.post {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+    margin-bottom: 30px;
+    margin-top: 5px;
+
+    &s__container {
+        display: flex;
+
+        justify-content: center;
+    
+        margin: 15px auto;
+
+        max-width: 1500px;
+    }
+
+    &-info {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        height: 150px;
+    }
+
+    &-speck {
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    &-name {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    &-author-date {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-column-end: 2;
+
+        grid-column-gap: 10px;
+        
+        display: flex;
+
+    }
+
+    &-author, &-date {
+        &__text {
+            font-size: small;
+        }
+    }
+
+    &-level, &-time-to-read, &-views, &-counts {
+        display: flex;
+
+        &__image {
+            max-width: 16px;
+            max-height: 16px;
+        }
+    
+        &__text {
+            margin-right: 20px;
+            font-size: x-small;
+        }
+    }
+
+    &-tags {
+        display: flex;
+
+        flex-direction: row;
+
+        &__text {
+            margin-left: 10px;
+            font-size: 12px;
+        }
+    }
+
+    &-short-text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    &-read-more {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        &__button {
+            cursor: pointer;
+            
+            display: block;
+            
+            height: 35px;
+            width: 160px;
+
+            font: bold 16px arial;
+            line-height: 35px;
+            text-align: center;
+            text-decoration: none;
+
+            color: #FFFFFF;
+            background: linear-gradient(to bottom, #143f83, #1a4780) repeat scroll 0 0 / 100% 200% rgba(0, 0, 0, 0);
+            border-bottom: 4px solid #ccc;
+            transition: all 0.5s linear 0s;
+
+
+        }
+
+        &__button:hover, &__button:focus {
+            background-position: 0 -102%;
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: right;
+        margin-right: 10px;
+
+        &__image {
+            max-height: 250px;
+        }
+    }
+}
