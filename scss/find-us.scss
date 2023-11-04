@@ -1,0 +1,36 @@
+.find-us {
+  &__container {
+    margin: 10px auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  &__map {
+
+    display: none;
+  }
+
+  &__text {}
+
+  &__header {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .find-us {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__text {
+      grid-row: 1/2;
+    }
+  }
+}
