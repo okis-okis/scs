@@ -1,0 +1,69 @@
+.graduate {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h1 {
+            align-self: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        
+            color: #143F83;
+        }
+    }
+
+    &-person {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        color: #fff;
+        background-color: rgba(20, 63, 131);
+
+        &__image {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        &-content {
+            margin-left: 10px;
+
+            &-group, &-info{
+                margin-bottom: 10px;
+            }
+    
+            &-name {
+                color: #fff;
+            }
+    
+        }
+    }
+
+    &-person:nth-of-type(odd) {
+        background-color: #fff;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .graduate {
+
+        &-person {
+            display: flex;
+            flex-direction: column;
+
+            &__image {
+                align-self: center;
+                
+                img {
+                    align-self: center;
+                    width: 100px;
+                }
+            }
+        }
+
+    }
+}
