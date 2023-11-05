@@ -2,6 +2,7 @@ node_modules
 
 server/*
 !server/wp-content
+server/wp-content/languages
 !Dockerfile
 !composer.json
 !composer.lock
