@@ -3,6 +3,8 @@ node_modules
 server/*
 !server/wp-content
 server/wp-content/languages
+server/wp-content/themes/twentytwentyone/app/schedule/f.xls
+server/wp-content/themes/twentytwentyone/app/schedule/output.html
 !Dockerfile
 !composer.json
 !composer.lock
