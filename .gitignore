@@ -5,6 +5,7 @@ server/*
 server/wp-content/languages
 server/wp-content/themes/twentytwentyone/app/schedule/f.xls
 server/wp-content/themes/twentytwentyone/app/schedule/output.html
+server/wp-content/plugins
 !Dockerfile
 !composer.json
 !composer.lock

@@ -673,4 +673,17 @@ endif;
 // Custom
 // =====
 
+// Функция, которая вызывается при активации темы
+function theme_activation() {
+	// Установка новой структуры ссылок
+	update_option('permalink_structure', '/%postname%/');
+
+	// Обновление правил перезаписи
+	flush_rewrite_rules();
+}
+
+// Регистрация функции при активации темы
+add_action('after_switch_theme', 'theme_activation');
+
+
 include get_template_directory() . '/app/schedule/AdminMenu.php';

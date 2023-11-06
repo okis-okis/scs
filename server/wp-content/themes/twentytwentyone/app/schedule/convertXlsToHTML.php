@@ -13,6 +13,7 @@ function convertXlsToHTML()
     // Save to HTML
     $writer = IOFactory::createWriter($spreadsheet, 'Html');
     $writer->save(__DIR__ . '/output.html');
+    require __DIR__ . '/publishPage.php';
 }
 
 
