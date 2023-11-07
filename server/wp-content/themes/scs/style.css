@@ -4,3 +4,13 @@ Description: SCS theme
 Author: scs
 Version: 1.0
 */
+body {
+	background: #F2F1EC;
+	max-width: 700px;
+	margin: 2em auto;
+}
+
+.header, .footer {
+	margin: 2em auto;
+	text-align: center;
+}
