@@ -1,23 +1,20 @@
 .find-us {
   &__container {
-    margin: 10px auto;
-    width: 95%;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
 
-  &__map {
-
-    display: none;
-  }
-
-  &__text {}
-
   &__header {
     font-size: 22px;
     margin-bottom: 10px;
     text-align: center;
+  }
+
+  &__frame {
+    width: 926px;
+    height:600px;
   }
 
 }
@@ -33,4 +30,7 @@
       grid-row: 1/2;
     }
   }
+
+
+
 }
