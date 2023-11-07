@@ -1,0 +1,38 @@
+.teacher-page-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5%;
+
+  .teacher-page-img{
+      float: left;
+      img{
+          width: 300px;
+          height: auto;
+      }
+  }
+
+  .teacher-page-about{
+      p{
+          margin-bottom: 5px;
+      }
+  }
+
+  .teachers-page-published{
+      margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .teacher-page-container{
+      display: flex;
+      flex-direction: column;
+
+      .teacher-page-img{
+          img{
+              text-align: center;
+              width: 80vw;
+              height: auto;
+          }
+      }
+  }
+}

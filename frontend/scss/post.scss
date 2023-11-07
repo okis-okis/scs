@@ -1,0 +1,23 @@
+.post {
+
+  display: grid;
+
+  &__container {
+      display: flex;
+
+      justify-content: center;
+
+      margin: 15px auto;
+
+      max-width: 1500px;
+  }
+
+  &-text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      margin-bottom: 10px;
+  }
+
+}

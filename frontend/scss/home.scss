@@ -16,11 +16,54 @@ body {
   margin: 0;
 }
 
+.default-btn {
+  background-color: #fff;
+  color: rgba(20, 63, 131);
+  border-radius: 1rem;
+  margin: 10px;
+  padding: 5px 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.default-btn:hover {
+  animation: bounce 1s;
+}
+
+.default-btn:visited,
+.default-btn:link {
+  color: rgba(20, 63, 131);
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
+  max-width: 100%;
+  margin: 0 0;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
 }
 
 body {
@@ -31,6 +74,127 @@ body {
 }
 
 .container {
+  margin-top: 30px;
   flex-grow: 1;
-  margin-top: 20%;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  margin-bottom: 55px;
+
+  img {
+    align-self: center;
+    border-radius: 2rem;
+    width: 95vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .advertisement {
+    position: absolute;
+    bottom: 8px;
+    left: 5%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+
+    &__text {
+      color: #fff;
+      // max-width: 150px;
+      width: 100%;
+      text-align: center;
+      margin: 16px auto;
+    }
+  }
+}
+
+.about_department {
+  background-color: #143f83;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+
+  &__content {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__image {
+    flex: 1 2 400px;
+    height: 300px;
+    border-radius: 3rem;
+    padding: 10px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+
+  &__btn {
+    width: 310px;
+    text-align: center;
+    align-self: bottom;
+    margin: 10px auto;
+  }
+}
+
+.graduate__header {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 0 0%;
+    width: 100%;
+
+    .banner {
+      margin-top: 10px;
+      img {
+        border-radius: 2rem;
+        width: 100%;
+        left: auto;
+      }
+      .advertisement {
+        left: 5%;
+        background: rgba(20, 63, 131, 0.7);
+      }
+    }
+  }
+
+  .about_department {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    &__content {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__text {
+      text-align: justify;
+      margin: 10px 10px;
+    }
+
+    img {
+      margin: 0px auto;
+      width: 90vw;
+      border-radius: 1rem;
+    }
+  }
 }
