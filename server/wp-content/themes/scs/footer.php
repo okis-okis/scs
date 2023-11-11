@@ -1,4 +1,3 @@
-<script type="module" src="/main.js"></script>
 </div>
 
 <footer>
@@ -15,9 +14,9 @@
     </ul>
   </div>
   <ul>
-    <li><a href="#">+79591234582</a></li>
-    <li><a href="#">email@mail.ru</a></li>
-    <li><a href="#">г. Алчевск, ул.Чапаева, 49</a></li>
+    <li><a href="#"><?php the_field('footer_phone', 63); ?></a></li>
+    <li><a href="#"><?php the_field('footer_email', 63); ?></a></li>
+    <li><a href="#"><?php the_field('footer_address', 63); ?></a></li>
   </ul>
 </footer>
 <?php wp_footer();?>

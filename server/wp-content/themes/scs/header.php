@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SCS</title>
 
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <?php wp_head();
   ?>
 </head>
@@ -15,16 +13,16 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="/index.html" class="nav-logo">
-        <img src="/images/dstu.png" alt="ДонГТУ">
+      <a href="/" class="nav-logo">
+        <img src=" <?php the_field('icon_logo', 63) ?> ">
         <?php the_field('nav-logo-title', 63); ?>
       </a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="/posts.html">Блог <? the_field('test', 63); ?></a>
+          <a href="/posts.html">Блог</a>
         </li>
         <li class="nav-item">
-          <a href="#">Студенту <? the_field('test2', 63); ?> </a>
+          <a href="#">Студенту</a>
         </li>
         <li class="nav-item">
           <a href="/entrant.html">Абитуриенту</a>
