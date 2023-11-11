@@ -25,13 +25,13 @@
           <a href="#">Студенту</a>
         </li>
         <li class="nav-item">
-          <a href="/entrant.html">Абитуриенту</a>
+          <a href="pages/entrant.html">Абитуриенту</a>
         </li>
         <li class="nav-item">
           <a href="/graduates.html">Выпускники</a>
         </li>
         <li class="nav-item">
-          <a href="/teachers.html">Преподаватели</a>
+          <a href="/prepodavateli-kafedry-sks/">Преподаватели</a>
         </li>
         <li class="nav-item">
           <a href="/about.html">О кафедре</a>
