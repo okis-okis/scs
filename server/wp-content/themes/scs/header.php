@@ -28,7 +28,7 @@
           <a href="pages/entrant.html">Абитуриенту</a>
         </li>
         <li class="nav-item">
-          <a href="/graduates.html">Выпускники</a>
+          <a href="/vypuskniki-kafedry-sks">Выпускники</a>
         </li>
         <li class="nav-item">
           <a href="/prepodavateli-kafedry-sks/">Преподаватели</a>
