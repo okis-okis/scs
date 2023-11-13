@@ -1,120 +1,144 @@
 .post {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+  margin-top: 5px;
+
+  &s__container {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 15px 20px;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-info {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
 
-    margin-bottom: 30px;
-    margin-top: 5px;
+    height: 150px;
+  }
 
-    &s__container {
-        display: flex;
+  &-speck {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
-        justify-content: center;
-    
-        margin: 15px auto;
+  &-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
+  &-author-date {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column-end: 2;
+
+    grid-column-gap: 10px;
+
+    display: flex;
+  }
+
+  &-author,
+  &-date {
+    &__text {
+      font-size: small;
+    }
+  }
+
+  &-level,
+  &-time-to-read,
+  &-views,
+  &-counts {
+    display: flex;
+
+    &__image {
+      max-width: 16px;
+      max-height: 16px;
     }
 
-    &-info {
-        display: grid;
+    &__text {
+      margin-right: 20px;
+      font-size: x-small;
+    }
+  }
 
-        grid-template-columns: repeat(2, 1fr);
+  &-tags {
+    display: flex;
 
-        height: 150px;
+    flex-direction: row;
+
+    &__text {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &-short-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-bottom: 10px;
+  }
+
+  &-read-more {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    &__button {
+      cursor: pointer;
+
+      display: inline-block;
+      padding: 0.5em 1.5em;
+      font-size: 16px;
+      color: #ffffff;
+      text-decoration: none;
+      background: rgba(20, 63, 131, 1) 100%;
     }
 
-    &-speck {
-        display: flex;
-        grid-column-start: 1;
-        grid-column-end: 3;
+    &__button:hover,
+    &__button:focus {
+      text-decoration: underline;
     }
+  }
 
-    &-name {
-        grid-column-start: 1;
-        grid-column-end: 3;
+  &-image {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &__image {
+      max-height: 250px;
     }
+  }
+}
 
-    &-author-date {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-column-end: 2;
-
-        grid-column-gap: 10px;
-        
-        display: flex;
-
-    }
-
-    &-author, &-date {
-        &__text {
-            font-size: small;
-        }
-    }
-
-    &-level, &-time-to-read, &-views, &-counts {
-        display: flex;
-
-        &__image {
-            max-width: 16px;
-            max-height: 16px;
-        }
-    
-        &__text {
-            margin-right: 20px;
-            font-size: x-small;
-        }
-    }
-
-    &-tags {
-        display: flex;
-
-        flex-direction: row;
-
-        &__text {
-            margin-left: 10px;
-            font-size: 12px;
-        }
-    }
-
-    &-short-text {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        margin-bottom: 10px;
-    }
-
-    &-read-more {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;
-
-        &__button {
-            cursor: pointer;
-            
-            display: inline-block;
-            padding: 0.5em 1.5em;
-            font-size: 16px;
-            color: #ffffff;
-            text-decoration: none;
-            background: rgba(20, 63, 131, 1) 100%;
-        }
-
-        &__button:hover, &__button:focus {
-            text-decoration: underline;
-        }
+@media only screen and (max-width: 1150px) {
+  .post {
+    &-title {
+      flex-direction: column;
     }
 
     &-image {
-        display: flex;
-        justify-content: right;
-        margin-right: 10px;
-        margin-bottom: 10px;
-
-        &__image {
-            max-height: 250px;
-        }
+      order: -1;
     }
+
+    &s__container {
+      .filters {
+        display: none;
+      }
+    }
+  }
 }
