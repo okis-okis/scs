@@ -1,153 +1,64 @@
-.main-content {
-  flex-grow: 1;
-  display: flex;
-  align-items: stretch;
-}
-
-.left-content {
-  flex: 1;
-  padding: 20px; /* Отступ слева */
-}
-
-.application-component {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.application-component h2 {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.application-component p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.apply-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0074cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.apply-button:hover {
-  background-color: #005aa5;
-}
-
-.right-content {
-  padding: 20px; /* Отступ справа */
+.entrant-container {
   display: flex;
   flex-direction: column;
-}
 
-.right-content a {
-  margin-bottom: 10px;
-  background-color: #0074cc;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
+  h2 {
+    text-align: center;
+    color: rgba(20, 63, 131);
+  }
 
-.right-content a:hover {
-  background-color: #005aa5;
-}
-
-.content-component {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-
-  .content {
+  &-content {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    margin: 10px 20px;
 
-    .centered-title {
-      font-weight: bold;
-      margin: 0px 0px 10px 0px;
-      font-size: 24px;
-      text-align: center;
+    &__about {
+      h2 {
+        text-align: center;
+        color: black;
+        margin-bottom: 10px;
+      }
     }
 
-    .left-content {
-      padding: 10px;
-    }
-
-    .right-content {
-      padding: 5px;
-    }
-
-    .read-more-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #0074cc;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-      margin: 10px 20px;
-    }
-
-    .read-more-button:hover {
-      background-color: #005aa5;
+    &__links {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
     }
   }
-}
-.fixed-size-image {
-  width: 200px; /* Задайте желаемый размер изображения */
-  height: auto;
 }
 
 @media only screen and (max-width: 900px) {
-  .application-component {
-    padding: 10px;
-  }
-
-  .left-content {
-    padding: 10px;
-  }
-
-  .main-content {
-    flex-direction: column;
-
-    .right-content {
-      order: -1;
-      padding-bottom: 10px;
-    }
-
-    .left-content {
-      padding-top: 10px;
-    }
-  }
-
-  .content-component {
-    .content {
+  .entrant-container {
+    &-content {
       display: flex;
       flex-direction: column;
+      margin: 10px 20px;
 
-      .right-content {
+      &__links {
         order: -1;
+        width: 100%;
       }
     }
   }
+}
 
-  .fixed-size-image {
-    width: 90vw;
-    height: auto;
-    margin: 0px auto;
-  }
+.entrant-btn {
+  color: #fff;
+  background-color: rgba(20, 63, 131);
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  margin: 10px;
+}
+
+.entrant-btn:hover {
+  animation: bounce 1s;
+}
+
+.entrant-btn:visited,
+.entrant-btn:link {
+  color: #fff;
+  text-decoration: none;
 }
