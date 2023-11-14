@@ -36,6 +36,44 @@ body {
   text-decoration: none;
 }
 
+.about-specialties {
+  text-align: center;
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 20px;
+    color: rgba(20, 63, 131);
+  }
+  &-links {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5%;
+
+    &__link {
+      width: 100%;
+      margin: 0px 20px;
+      text-align: center;
+      img {
+        align-self: center;
+        border-radius: 2rem;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__link:visited,
+    &__link:link {
+      color: rgba(20, 63, 131);
+      text-decoration: none;
+      width: 100%;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
 @keyframes bounce {
   0%,
   20%,
@@ -58,7 +96,6 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  min-height: 100%;
   max-width: 100%;
   margin: 0 0;
   display: flex;
@@ -84,7 +121,7 @@ body {
   text-align: center;
   color: white;
 
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 
   img {
     align-self: center;
@@ -157,6 +194,12 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  .about-specialties {
+    &-links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .container {
     margin: 0 0%;
     width: 100%;
@@ -192,6 +235,7 @@ body {
     }
 
     img {
+      object-fit: cover;
       margin: 0px auto;
       width: 90vw;
       border-radius: 1rem;
