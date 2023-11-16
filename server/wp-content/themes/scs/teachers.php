@@ -9,7 +9,7 @@ Template Name: Преподаватели кафедры
 <?php get_header(); ?>
 <div class="teacher__container">
 
-  <h1 class="teacher__header">Преподаватели кафедры СКС</h1>
+  <h1 class="teacher__header"><?php the_title(); ?></h1>
 
 
 

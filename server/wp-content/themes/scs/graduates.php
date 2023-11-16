@@ -9,7 +9,7 @@ Template Name: Выпускники кафедры
 <?php get_header(); ?>
 <div class="graduate__container">
 
-  <h1 class="graduate__header">Выпускники кафедры СКС</h1>
+  <h1 class="graduate__header"><?php the_title(); ?></h1>
 
 
 
