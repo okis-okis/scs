@@ -1,5 +1,7 @@
+@use "colors";
+
 .post {
-  display: grid;
+  display: flex;
 
   &__container {
     display: flex;
@@ -11,11 +13,108 @@
     max-width: 1500px;
   }
 
-  &-text {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+  &-info {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-name {
+    color: colors.$title-color;
+  }
+
+  &-author-date {
+    display: flex;
+  }
+
+  &-author,
+  &-date {
+    &__text {
+      font-size: small;
+      margin-right: 10px;
+    }
+  }
+
+  &-author {
+    color: colors.$text-color;
+  }
+
+  &-date {
+    color: colors.$gray;
+  }
+
+  &-tags {
+    ul {
+      display: flex;
+      list-style-position: inside;
+      list-style: none;
+
+      li:before {
+        content: "#";
+        padding-right: 5px;
+      }
+
+      li {
+        margin-right: 10px;
+        color: colors.$text-color;
+      }
+    }
+  }
+
+  &__content {
+    &-text {
+      margin-bottom: 5px;
+    }
+
+    &-image {
+      display: flex;
+      justify-content: center;
+      float: left;
+      width: 250px;
+      height: auto;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      &__image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .post {
+    display: flex;
+
+    &__container {
+      display: flex;
+
+      justify-content: center;
+
+      margin: 15px 20px;
+
+      max-width: 600px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      &-image {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        &__image {
+          width: 80%;
+        }
+      }
+    }
   }
 }
