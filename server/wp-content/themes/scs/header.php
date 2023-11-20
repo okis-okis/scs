@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -34,16 +34,7 @@
           <a href="/prepodavateli-kafedry-sks/">Преподаватели</a>
         </li>
         <li class="nav-item">
-          <a href="/about.html">О кафедре</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">Вход</a>
-        </li>
-        <li class="nav-item">
-          <form>
-            <input class="search-input" type="text" placeholder="Поиск...">
-            <button type="submit"></button>
-          </form>
+          <a href="/o-kafedre/">О кафедре</a>
         </li>
       </ul>
       <div class="hamburger">

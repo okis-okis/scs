@@ -17,6 +17,21 @@ Template Name: Главная страница
     </div>
   </div>
 
+  <div class="about-specialties">
+    <p class="about-specialties__title">Хочешь начать карьеру в ИТ?</p>
+    <div class="about-specialties-links">
+      <a href="/o-napravlenii-podgotovki-10-05-03-informaczionnaya-bezopasnost/" class="about-specialties-links__link">
+        <p>Кибербезопасность</p>
+        <img src="<?php the_field('cybersecurity_img') ?>" alt="Направления" />
+      </a>
+      <a href="/o-napravlenii-podgotovki-09-03-01-informatika-i-vychislitelnaya-tehnika-profil-iskusstvennyj-intellekt-v-promyshlennosti/"
+        class="about-specialties-links__link">
+        <p>Искусственный интиллект</p>
+        <img src="<?php the_field('ai_img') ?>" alt="Направления" />
+      </a>
+    </div>
+  </div>
+
 
   <?php
 
@@ -77,7 +92,7 @@ Template Name: Главная страница
       <p class="about_department__text">
         <?php the_field('About_department_text') ?>
       </p>
-      <a href="#" class="default-btn about_department__btn">Подбробнее</a>
+      <a href="/o-kafedre/" class="default-btn about_department__btn">Подбробнее</a>
     </div>
     <img src="<?php the_field('About_department_img') ?>" alt="Картинка ИСД" class="about_department__image">
   </div>
@@ -112,9 +127,9 @@ Template Name: Главная страница
           <div class="swiper-slide"><img src=" <?php the_field('image') ?> ">
 
             <div class="slider-text__container">
-              <a href="<?php the_permalink() ?>" class="slider-text__main-text">
+              <p class="slider-text__main-text">
                 <?php the_title(); ?>
-              </a>
+              </p>
             </div>
           </div>
 
