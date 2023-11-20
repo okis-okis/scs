@@ -25,7 +25,7 @@
           <a href="#">Студенту</a>
         </li>
         <li class="nav-item">
-          <a href="pages/entrant.html">Абитуриенту</a>
+          <a href="/abiturientu/">Абитуриенту</a>
         </li>
         <li class="nav-item">
           <a href="/vypuskniki-kafedry-sks">Выпускники</a>

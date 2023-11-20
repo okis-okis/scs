@@ -15,3 +15,4 @@ server/composer.lock
 
 frontend/dist
 frontend/css
+server/wp-content/ai1wm-backups/*.wpress
