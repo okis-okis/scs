@@ -60,9 +60,9 @@ Template Name: Главная страница
 
           <div class="swiper-slide"><img src=" <?php the_field('articles_image') ?> ">
             <div class="slider-text__container">
-              <p class="slider-text__main-text">
+              <a href="<?php the_permalink() ?>" class="slider-text__main-text">
                 <?php the_title(); ?>
-              </p>
+              </a>
               <small class="slider-text__sub-text">
                 <?php the_field('articles_author'); ?>
               </small>
