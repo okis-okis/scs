@@ -1,0 +1,33 @@
+.error__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto 0px;
+  text-align: center;
+
+  &-message {
+    color: rgba(20, 63, 131);
+    font-size: 20px;
+  }
+  &-code {
+    font-size: 35px;
+  }
+}
+
+.error-btn:link,
+.error-btn:visited {
+  width: 300px;
+  margin: 10px auto;
+  overflow-wrap: break-word;
+  background-color: rgba(20, 63, 131);
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+  .error-btn:link,
+  .error-btn:visited {
+    width: 90%;
+    height: auto;
+  }
+}
