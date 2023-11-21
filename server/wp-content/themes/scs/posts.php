@@ -66,9 +66,10 @@ while ($query->have_posts()) {
                   <div class="post-name">
                   <a href="<?=the_permalink() ?>"><h1 class="post-name__text"><?=the_title() ?></h4></a>
                   </div>
+                  <p><?php the_excerpt(); ?></p>
                   <div class="post-author-date">
                     <div class="post-author">
-                      <p class="post-author__text"><?=the_field('vybor')?></p>
+                      <p class="post-author__text"><?=the_field('post-authors')?></p>
                     </div>
                     <div class="post-date">
                       <p class="post-date__text"><?=get_the_date() ?></p>
