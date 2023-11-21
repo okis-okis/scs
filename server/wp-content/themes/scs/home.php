@@ -26,7 +26,7 @@ Template Name: Главная страница
       </a>
       <a href="/o-napravlenii-podgotovki-09-03-01-informatika-i-vychislitelnaya-tehnika-profil-iskusstvennyj-intellekt-v-promyshlennosti/"
         class="about-specialties-links__link">
-        <p>Искусственный интиллект</p>
+        <p>Искусственный интеллект</p>
         <img src="<?php the_field('ai_img') ?>" alt="Направления" />
       </a>
     </div>
@@ -64,7 +64,7 @@ Template Name: Главная страница
                 <?php the_title(); ?>
               </a>
               <small class="slider-text__sub-text">
-                <?php the_field('articles_author'); ?>
+                <?php the_field('vybor'); ?>
               </small>
             </div>
           </div>

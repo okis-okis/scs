@@ -3,8 +3,10 @@ node_modules
 server/*
 !server/wp-content
 server/wp-content/languages
-server/wp-content/themes/twentytwentyone/app/schedule/f.xls
-server/wp-content/themes/twentytwentyone/app/schedule/output.html
+server/wp-content/themes/twentytwentyone
+server/wp-content/themes/twentytwentytwo
+server/wp-content/themes/twentytwentythree
+server/wp-content/themes/twentytwentyfour
 server/wp-content/plugins
 server/wp-content/updraft
 server/wp-content/uploads/wpcode

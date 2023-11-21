@@ -19,7 +19,7 @@
       </a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="/posts.html">Блог</a>
+          <a href="/posts">Блог</a>
         </li>
         <li class="nav-item">
           <a href="#">Студенту</a>
