@@ -15,5 +15,9 @@ RUN usermod -u 1000 www-data
 RUN chown -R www-data:www-data /var/www/html/
 RUN chmod -R 755 /var/www/html
 
-# Enable Apache mod_rewrite for WordPress permalinks
+
 RUN a2enmod rewrite
+RUN a2enmod ssl
+
+EXPOSE 80
+EXPOSE 443

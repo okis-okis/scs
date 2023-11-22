@@ -1,63 +1,53 @@
 <?php
 /*
-Template Name: Страница поста
+ * Template Name: Страница поста
+ * Template Post Type: post, page, product
 */
 
 get_header();
 ?>
 
-h1 class="graduate__header"><?php the_title(); ?></h1>
+<div class="post__container">
 
+      <div class="post">
 
+        <div class="post-info">
+            <div class="post-name">
+              <h1 class="post-name__text"><?=the_title()?></h4>
+            </div>
+            <div class="post-author-date">
+              <div class="post-author">
+                <p class="post-author__text"><?=the_field('post-authors')?></p>
+              </div>
+              <div class="post-date">
+                <p class="post-date__text"><?=get_the_date()?></p>
+              </div>
+            </div>
+            <div class="post-tags">
 
+              <?php $posttags = get_the_tags();
+                if($posttags){
+                  echo '<ul>';
+                  foreach($posttags as $tag) {
+                    echo '<li>'.$tag->name .'</li>';
+                  }
+                  echo '</ul>';
+                }
+              ?>
 
-  <?php
+            </div>
+        </div>
 
-  $args = array(
-    'category_name' => 'graduates',
-    'posts_per_page' => 10,
-  );
+        <div class="post__content">
+          <div class="post__content-image">
+            <img src="<?=the_field('articles_image')?>" alt="Изображение к статье" class="post__content-image__image" loading="lazy">
+          </div>
 
-  // Запрос. $args - параметры запроса
-  $query = new WP_Query($args);
-
-
-  ?>
-
-  <?php
-
-
-  while ($query->have_posts()) {
-    $query->the_post();
-
-    ?>
-
-    <div class="graduate-person">
-      <div class="graduate-person__image">
-        <img src=" <?php the_field('image') ?> " alt="Person">
-      </div>
-      <div class="graduate-person-content">
-        <p class="graduate--person-content-name">
-          <a href="<?php the_permalink() ?>" class="graduate-person-content-name__text">
-            <?php the_title(); ?>
-          </a>
-
-        </p>
-        <p class="graduate-person-content-group">
-          <?php the_field('group'); ?>
-        </p>
-        <p class="graduate-person-content-info">
-        <?php the_content(); ?>
-        </p>
+          <div class="post__content-text">
+            <?=the_content()?>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <?php
-  }
-  wp_reset_query();
-
-  ?>
-
 
 <?php get_footer(); ?>
