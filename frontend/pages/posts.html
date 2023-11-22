@@ -73,6 +73,16 @@
                   <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
               </div>
+
+              <div class="posts__container-posts-find-order-select">
+                <select>
+                  <option value="all">Все преподаватели</option>
+                  <option value="Bizyanov">Бизянов Е.Е.</option>
+                  <option value="Bakaev">Бакаев О.В.</option>
+                  <option value="Pogorelov">Погорелов Р.Н.</option>
+                  <option value="Fomin">Фомин А.И.</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="posts__container-posts-filter">
@@ -195,11 +205,24 @@
                 </div>
               </a>
             </div>
+            <div class="pagination p1">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a class="is-active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li>...</li>
+                <li><a href="#">100</a></li>
+                <li><a href="#">></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
       <script type="module" src="/main.js"></script>
+      <script type="module" src="/js/findFilter.js"></script>
     </div>
     <footer>
       <div class="site-links">
