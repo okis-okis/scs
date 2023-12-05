@@ -41,9 +41,9 @@ Template Name: Выпускники кафедры
       </div>
       <div class="graduate-person-content">
         <p class="graduate--person-content-name">
-          <a href="<?php the_permalink() ?>" class="graduate-person-content-name__text">
+          <p class="graduate-person-content-name__text">
             <?php the_title(); ?>
-          </a>
+          </p>
 
         </p>
         <p class="graduate-person-content-group">
