@@ -49,8 +49,8 @@ get_header();
           </div>
           <div class="teachers-page-published">
           <?php
-                $data = get_field('scientific-publications');
-                $publications = explode('<br>', $data);
+                $data = nl2br(get_field('scientific-publications'));
+                $publications = preg_split('/<br[^>]*>/i', $data);
                 if (count($publications) > 0) {
             ?>
             <h2>Научные публикации</h2>
@@ -60,8 +60,8 @@ get_header();
                 } ?>
             </ol>
             <?php }
-                $data = get_field('educational-publications');
-                $publications = explode('<br>', $data);
+                $data = nl2br(get_field('educational-publications'));
+                $publications = preg_split('/<br[^>]*>/i', $data);
                 if (count($publications) > 0) {
             ?>
             <h2>Учебные публикации</h2>
