@@ -165,6 +165,13 @@
               &__container {
                 color: colors.$gray;
                 margin-right: 10px;
+                &__text {
+                  a:link,
+                  a:visited {
+                    text-decoration: none;
+                    color: colors.$gray;
+                  }
+                }
               }
             }
 
