@@ -66,10 +66,13 @@
 
   &__content {
     width: 100%;
-
-    &-text {
-      margin-bottom: 5px;
-    }
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: normal;
+    font-family: depends on user agent;
   }
 }
 

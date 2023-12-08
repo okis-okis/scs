@@ -398,17 +398,18 @@
     padding: 0;
     text-align: center;
     justify-content: center;
+
+    a {
+      display: inline-block;
+      padding: 0px 15px;
+      color: #222;
+      text-decoration: none;
+    }
+
+    a.is-active {
+      background-color: colors.$button-background-color;
+      border-radius: 100%;
+      color: #fff;
+    }
   }
-}
-
-.pagination a {
-  display: inline-block;
-  padding: 0px 15px;
-  color: #222;
-}
-
-.p1 a.is-active {
-  background-color: colors.$button-background-color;
-  border-radius: 100%;
-  color: #fff;
 }
