@@ -1,32 +1,33 @@
 .about {
-    &__container {
-        display: flex;
-        flex-direction: column;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+  }
+
+  &-header {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    &__text {
+      color: #143f83;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 40%;
+      align-self: center;
     }
 
-    &-header {
-        align-self: center;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        
-        &__text {
-            color: #143F83;
-        }
+    &__text {
+      margin-top: 15px;
     }
-
-    &-content {
-        display: flex;
-        flex-direction: column;
-
-        &__image {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: 40%;
-            align-self: center;
-        }
-
-        &__text {
-            margin-top: 15px;
-        }
-    }
+  }
 }
