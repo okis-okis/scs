@@ -25,3 +25,55 @@ function show_post_content($atts) {
 
 add_shortcode( 'show_post', 'show_post_content' );
 add_theme_support('custom-logo');
+
+function custom_menu_page()
+{
+  add_menu_page(
+    'Статьи',
+    'Просмотр статей',
+    'manage_options',
+    'articles-menu-slug',
+    'custom_menu_page_content',
+    'dashicons-welcome-write-blog',
+    6
+  );
+
+  // Добавляем подменю
+  add_submenu_page(
+    'articles-menu-slug',
+    'Преподаватели',
+    'Преподаватели',
+    'manage_options',
+    'submenu-1-slug',
+    'submenu_1_page_content'
+  );
+
+  add_submenu_page(
+    'articles-menu-slug',
+    'Выпускники',
+    'Выпускники',
+    'manage_options',
+    'submenu-2-slug',
+    'submenu_2_page_content'
+  );
+
+}
+
+function custom_menu_page_content()
+{
+  echo '<script>window.location.href = "/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=10&filter_action=Фильтр&paged=1&action2=-1";</script>';
+}
+
+function submenu_1_page_content()
+{
+  echo '<script>window.location.href = "/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=12&filter_action=Фильтр&paged=1&action2=-1";</script>';
+}
+
+function submenu_2_page_content()
+{
+  echo '<script>window.location.href = "/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=11&filter_action=Фильтр&paged=1&action2=-1";</script>';
+}
+
+
+
+add_action('admin_menu', 'custom_menu_page');
