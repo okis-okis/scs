@@ -16,7 +16,7 @@ get_header();
               <div class="teacher-page-title">
                 <div class="teacher-page-title-info">
                   <h2><?=the_field('teacher-name')?></h2>
-                  <a href="/" class="default-btn teacher-page-title-button">Личный блог</a>
+                  <a href="<?=the_field('selflink')?>" class="default-btn teacher-page-title-button">Личный блог</a>
                 </div>
                 <p><?=the_field('rank')?></p>
               </div>
