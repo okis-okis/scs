@@ -5,11 +5,10 @@
     <ul>
       <li><a href="/">Главная страница</a></li>
       <li><a href="/abiturientu">Абитуриенту</a></li>
-      <li><a href="#">Вход</a></li>
     </ul>
     <ul>
       <li><a href="/o-kafedre/">О кафедре</a></li>
-      <li><a href="/posts.html">Блоги</a></li>
+      <li><a href="/posts/">Блог</a></li>
       <li><a href="#">Студенту</a></li>
     </ul>
   </div>
