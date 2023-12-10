@@ -16,7 +16,7 @@ services:
       - ./server:/var/www/html
 
   db:
-    image: mysql:5.7
+    image: mariadb:latest
     restart: always
     environment:
       MYSQL_DATABASE: wpDB
@@ -24,7 +24,7 @@ services:
       MYSQL_PASSWORD: 0iN3PE44DY
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
+      - db:/var/lib/mariadb
 
 volumes:
   wordpress:
