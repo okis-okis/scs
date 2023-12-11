@@ -32,14 +32,14 @@ services:
       - db
 
   db:
-    image: mysql:5.7
+    image: mariadb:latest
     environment:
       MYSQL_DATABASE: wpDB
       MYSQL_USER: admin
       MYSQL_PASSWORD: 0iN3PE44DY
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
+      - db:/var/lib/mariadb
     networks:
       - network
 

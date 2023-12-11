@@ -49,7 +49,6 @@ $args = array(
   'posts_per_page' => 4,
   'category_name'  => 'articles',
   'paged'          => $paged,
-  'orderby'        => 'none'
 );
 
 $query = new WP_Query($args);
