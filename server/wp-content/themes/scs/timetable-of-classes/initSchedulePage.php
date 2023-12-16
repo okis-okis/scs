@@ -1,16 +1,21 @@
 <?php
 
-// Путь к вашему HTML-файлу
-$html_file_path = __DIR__ . '/output.html';
+$post_id = 101;
 
-// Получение содержимого HTML-файла
-$html_content = file_get_contents($html_file_path);
+$existing_post = get_post($post_id);
+
+if ($existing_post !== null) {
+  return;
+}
+
 
 // Массив данных для создания новой записи
 $new_page_data = array(
+  'ID' => $post_id,
   'post_title' => 'Расписание',
-  'post_content' => $html_content,
+  'post_content' => 'Расписание отсутствует',
   'post_status' => 'publish',
+  'post_author' => 1,
   'post_type' => 'page',
 );
 

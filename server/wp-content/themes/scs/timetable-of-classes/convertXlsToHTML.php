@@ -1,7 +1,7 @@
 <?php
 
 
-require __DIR__ . '/../../../../../vendor/autoload.php';
+require ABSPATH  . 'vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 

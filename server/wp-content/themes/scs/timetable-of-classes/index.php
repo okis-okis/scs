@@ -1,5 +1,6 @@
 <?php
 
+include get_template_directory() . '/timetable-of-classes/initSchedulePage.php';
 
 function add_schedule_menu_item()
 {
@@ -24,13 +25,13 @@ function schedule_menu_page()
 {
   // Ваш код или содержимое страницы, связанной с этим пунктом меню
 
-  include get_template_directory() . '/template-parts/admin/schedule-page.php';
+  include get_template_directory() . '/timetable-of-classes/schedule-page.php';
 
 }
 
 function process_xls_upload()
 {
-  include get_template_directory() . '/app/schedule/scheduleHandler.php';
+  include get_template_directory() . '/timetable-of-classes/scheduleHandler.php';
 }
 
 add_action('admin_post_process_xls_upload', 'process_xls_upload');
@@ -48,7 +49,6 @@ function enqueue_custom_script_for_admin_page()
 }
 
 add_action('admin_enqueue_scripts', 'enqueue_custom_script_for_admin_page');
-
 
 
 
