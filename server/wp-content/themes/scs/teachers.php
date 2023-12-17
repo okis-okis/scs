@@ -3,7 +3,6 @@
 Template Name: Преподаватели кафедры
 */
 
-
 ?>
 
 <?php get_header(); ?>
@@ -42,19 +41,11 @@ Template Name: Преподаватели кафедры
       </div>
     </div>
 
-
     <?php
   }
   wp_reset_query();
 
   ?>
-
-
-
-
-
-
-
 
 </div>
 <?php get_footer(); ?>
