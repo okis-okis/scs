@@ -45,13 +45,14 @@ body {
     color: rgba(20, 63, 131);
   }
   &-links {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    // flex-direction: row;
+    margin: 10px 2.5%;
 
     &__link {
       width: 100%;
-      margin: 0px 20px;
       text-align: center;
       img {
         align-self: center;

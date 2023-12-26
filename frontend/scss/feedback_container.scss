@@ -1,0 +1,145 @@
+@use "colors";
+.feedback_container {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    p {
+      color: colors.$title-color;
+      font-size: 20px;
+    }
+  }
+  &__email {
+    margin-bottom: 10px;
+    text-align: center;
+    input {
+      width: 95%;
+      background-color: colors.$blue-background-color;
+      color: colors.$white-text-color;
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color: colors.$white-text-color;
+    }
+  }
+
+  &__number {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+    input {
+      background-color: colors.$blue-background-color;
+      color: colors.$white-text-color;
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color: colors.$white-text-color;
+    }
+
+    select {
+      margin-left: 10px;
+      background-color: colors.$button-background-color;
+      color: colors.$white-text-color;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+
+  &__message {
+    margin-bottom: 10px;
+    textarea {
+      background-color: colors.$blue-background-color;
+      color: colors.$white-text-color;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 5px;
+      width: 95%;
+    }
+    textarea::-webkit-input-placeholder {
+      color: colors.$white-text-color;
+    }
+  }
+
+  &__button {
+    text-align: center;
+    input {
+      font-size: 20px;
+      padding: 5px;
+      background: colors.$button-background-color;
+      color: colors.$white-text-color;
+      border-radius: 5px;
+    }
+    input:hover {
+      background: colors.$blue-background-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .feedback_container {
+    margin: 10px 10px;
+
+    &__email {
+      margin-bottom: 10px;
+      text-align: center;
+      input {
+        width: 95%;
+        background-color: colors.$blue-background-color;
+        color: colors.$white-text-color;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      input::-webkit-input-placeholder,
+      textarea::-webkit-input-placeholder {
+        color: colors.$white-text-color;
+      }
+    }
+
+    &__number {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        background-color: colors.$blue-background-color;
+        color: colors.$white-text-color;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      input::-webkit-input-placeholder,
+      textarea::-webkit-input-placeholder {
+        color: colors.$white-text-color;
+      }
+
+      select {
+        background-color: colors.$button-background-color;
+        color: colors.$white-text-color;
+        border-radius: 5px;
+      }
+    }
+
+    &__message {
+      margin-bottom: 10px;
+      textarea {
+        background-color: colors.$blue-background-color;
+        color: colors.$white-text-color;
+        border-radius: 5px;
+
+        padding: 5px;
+      }
+      textarea::-webkit-input-placeholder {
+        color: colors.$white-text-color;
+      }
+    }
+  }
+}
