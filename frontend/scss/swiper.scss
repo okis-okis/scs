@@ -1,11 +1,10 @@
 @use "colors";
 
 .slider-swiper {
-  height: 350px;
+  min-height: 300px;
   width: 100%;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin: 10px 0px;
 }
 
 .swiper {
@@ -23,7 +22,7 @@
   text-align: center;
 
   img {
-    height: 70%;
+    height: 200px;
     max-width: 100%;
     text-align: center;
     object-fit: fill;
