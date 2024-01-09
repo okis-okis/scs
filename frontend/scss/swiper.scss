@@ -1,5 +1,5 @@
 .slider-swiper {
-  height: 300px;
+  height: 350px;
   width: 100%;
   position: relative;
   margin-top: 10px;
@@ -18,16 +18,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
+  img {
+    height: 70%;
+    max-width: 100%;
+    text-align: center;
+    object-fit: fill;
+  }
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-
-.swiper-button-next,
+.swiper-slide .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 27px !important;
   left: auto;
@@ -44,9 +45,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  &__main-text {
   }
 
   &__sub-text {
