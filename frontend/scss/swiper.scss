@@ -1,9 +1,10 @@
+@use "colors";
+
 .slider-swiper {
-  height: 300px;
+  height: 350px;
   width: 100%;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin: 10px 0px;
 }
 
 .swiper {
@@ -18,16 +19,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
+  img {
+    height: 200px;
+    max-width: 100%;
+    text-align: center;
+    object-fit: fill;
+  }
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-
-.swiper-button-next,
+.swiper-slide .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 27px !important;
   left: auto;
@@ -44,13 +46,37 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
   }
 
-  &__main-text {
+  &__container:hover {
+    .tooltiptext {
+      visibility: visible;
+    }
   }
 
   &__sub-text {
     color: #143f83;
+    overflow: hidden;
   }
 }
 

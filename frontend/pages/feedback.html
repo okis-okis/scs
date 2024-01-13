@@ -15,7 +15,7 @@
     <header class="header">
       <nav class="navbar">
         <a href="/index.html" class="nav-logo">
-          <img src="/../public/images/dstu.png" alt="ДонГТУ" />
+          <img src="../public/images/dstu.png" alt="ДонГТУ" />
           <span>Кафедра СКС</span>
         </a>
         <ul class="nav-menu">
@@ -53,61 +53,46 @@
     </header>
 
     <div class="wrapper">
-      <div class="container">
-        <div class="teacher-page-container">
-          <div class="teacher-page-info">
-            <div class="teacher-page-content">
-              <div class="teacher-page-title">
-                <div class="teacher-page-title-info">
-                  <h2>Бизянов Евгений Евгеньевич</h2>
-                  <a href="/" class="default-btn teacher-page-title-button"
-                    >Личный блог</a
-                  >
-                </div>
-                <p>
-                  И.о. зав кафедрой СКС, доктор экономических наук, кандидат
-                  технических наук
-                </p>
-              </div>
-              <div class="teacher-page-subjects">
-                <div class="teacher-page-img">
-                  <img
-                    src="/../public/images/teachers/Бизянов Е.Е..JPG"
-                    alt=""
-                  />
-                </div>
-                <div class="teacher-page-about">
-                  <div class="teacher-person-content-info">
-                    <h3>Учебные дисциплины:</h3>
-                    <ul>
-                      <li>Программирование</li>
-                      <li>Организация баз данных</li>
-                      <li>Web-технологии</li>
-                    </ul>
-                    <h3>Научные направления:</h3>
-                    <ul>
-                      <li>Программирование</li>
-                      <li>Организация баз данных</li>
-                      <li>Web-технологии</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="feedback_container">
+        <form id="feedbackForm" action="javascript:void(0)">
+          <div class="feedback_container__title">
+            <p>Свяжитесь с нами</p>
           </div>
-          <div class="teachers-page-published">
-            <h2>Научные публикации</h2>
-            <ol>
-              <li>Бабарыкин Н. Н.</li>
-              <li>Карабасов Ю. С., Черноусов П. И.,</li>
-            </ol>
-            <h2>Учебные публикации</h2>
-            <ol>
-              <li></li>
-              <li></li>
-            </ol>
+          <div class="feedback_container__email">
+            <input
+              type="email"
+              id="email"
+              size="30"
+              placeholder="Оставьте свою почту"
+              required
+            />
           </div>
-        </div>
+          <label for="phone">Номер телефона в формате: 7(959)000-11-22</label>
+          <div class="feedback_container__number">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[7-8]{1}([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="Оставьте свой номер"
+            />
+            <select>
+              <option value="0">Позвонить</option>
+              <option value="1">Написать</option>
+            </select>
+          </div>
+          <div class="feedback_container__message">
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              placeholder="Оставьте своё сообщение"
+            ></textarea>
+          </div>
+          <div class="feedback_container__button">
+            <input type="submit" text="Отправить" />
+          </div>
+        </form>
       </div>
       <script type="module" src="/main.js"></script>
     </div>

@@ -16,7 +16,6 @@
 
     &__title {
       color: colors.$title-color;
-      font-size: 20px;
       text-align: center;
     }
 
@@ -71,6 +70,7 @@
               width: 200px;
               border-radius: 10px;
               padding: 10px;
+              font-size: 16px;
               color: colors.$white-text-color;
 
               option {
@@ -122,6 +122,7 @@
         display: flex;
         flex-direction: column;
         margin: 0px auto;
+        width: 100%;
 
         &-post {
           display: flex;
@@ -270,20 +271,20 @@
   .post {
     &s__container {
       &__mobile_filter {
-        position: fixed;
-        z-index: 50;
-        display: inline;
-        width: 100%;
-        height: 100vh;
-        top: 0px;
-        left: 0px;
-        transition: all 0.3s ease-in-out;
-        display: none;
+        display: block;
+        // position: fixed;
+        // display: inline;
+        // width: 100%;
+        // height: 100vh;
+        // top: 0px;
+        // left: 0px;
+        // transition: all 0.3s ease-in-out;
+        // display: none;
 
         &__button {
           top: 90px;
           right: 0px;
-          position: fixed;
+          position: absolute;
           z-index: 150;
           width: 50px;
           height: 50px;
@@ -301,7 +302,7 @@
 
       &__mobile_filter-active {
         display: block;
-        background-color: colors.$background-color;
+        // background-color: colors.$background-color;
         transition: all 0.3s ease-in-out;
       }
 
@@ -311,36 +312,40 @@
         flex-direction: column;
 
         &-find {
-          $w: 100vw;
-          $buttonSize: 50px;
-          position: fixed;
-          z-index: 50;
-          width: calc(#{$w} - #{$buttonSize});
-          left: -100%;
-          top: 80px;
+          // $w: 100vw;
+          // $buttonSize: 50px;
+          // position: fixed;
+          // z-index: 50;
+          // width: calc(#{$w} - #{$buttonSize});
+          // left: -100%;
+          // top: 80px;
+          display: none;
           transition: all 0.3s ease-in-out;
           &-order {
-            display: inline-block;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
           }
         }
 
         &-find-active {
-          left: 0%;
+          // z-index: 50;
+          // left: 0%;
+          display: block;
           transition: all 0.3s ease-in-out;
         }
 
         &-filter {
-          position: fixed;
-          z-index: 50;
-          width: 100%;
-          left: -100%;
-          top: 220px;
+          // position: fixed;
+          // z-index: 50;
+          // width: 100%;
+          // left: -100%;
+          // top: 220px;
+          display: none;
           transition: all 0.3s ease-in-out;
         }
 
         &-filter-active {
-          left: 0%;
+          display: block;
           transition: all 0.3s ease-in-out;
         }
 

@@ -7,7 +7,7 @@
     h1 {
       align-self: center;
       justify-content: center;
-      margin: 40px 10px 10px 10px;
+      margin: 10px;
 
       color: #143f83;
     }
@@ -16,6 +16,10 @@
   &-person {
     display: flex;
     flex-direction: row;
+    color: black;
+    a {
+      color: black;
+    }
     padding: 10px 10px;
     justify-content: center;
 
@@ -72,10 +76,6 @@
 
   &-person:nth-of-type(odd) {
     margin-right: auto;
-    color: black;
-    a {
-      color: black;
-    }
 
     .teacher-person__image {
       order: 0;
