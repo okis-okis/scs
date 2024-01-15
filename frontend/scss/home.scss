@@ -8,12 +8,13 @@ body {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-Bold.ttf);
+  src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 * {
   padding: 0;
   margin: 0;
+  font-family: Montserrat;
 }
 
 .default-btn {
@@ -98,21 +99,19 @@ body {
 .wrapper {
   box-sizing: border-box;
   max-width: 100%;
-  margin: 80px 0 0 0;
+  margin: 10px 0 0 0;
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
 }
 
 body {
-  font-family: Montserrat;
-
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  margin-top: 30px;
+  margin-top: 0px;
   flex-grow: 1;
   width: 100%;
 }

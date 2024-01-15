@@ -3,6 +3,7 @@
 .post {
   display: flex;
   width: 100%;
+  font-family: Montserrat;
 
   &__container {
     display: flex;
@@ -72,7 +73,7 @@
     font-stretch: normal;
     font-size: 20px;
     line-height: normal;
-    font-family: depends on user agent;
+    font-family: Montserrat;
   }
 }
 
