@@ -10,7 +10,7 @@
 
     justify-content: center;
 
-    margin: 15px 10px;
+    margin: 15px 5%;
   }
 
   &-info {
@@ -71,7 +71,6 @@
     font-variant: normal;
     font-weight: normal;
     font-stretch: normal;
-    font-size: 20px;
     line-height: normal;
     font-family: Montserrat;
   }
@@ -86,7 +85,7 @@
 
       justify-content: center;
 
-      margin: 15px 20px;
+      margin: 15px 5%;
     }
   }
 }
@@ -104,6 +103,55 @@
       ul {
         display: inline-block;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .post {
+    display: flex;
+    width: 100%;
+    font-family: Montserrat;
+
+    &__container {
+      display: flex;
+
+      justify-content: center;
+
+      margin: 15px 5%;
+    }
+
+    &-title {
+      display: inline-block;
+    }
+
+    &-name {
+      color: colors.$title-color;
+      font-size: 5vw;
+    }
+
+    &-author-date {
+      font-size: 5vw;
+    }
+
+    &-author {
+      p {
+        font-size: 5vw;
+      }
+    }
+
+    &-date {
+      p {
+        font-size: 5vw;
+      }
+    }
+
+    &__content {
+      font-size: 5vw;
+    }
+
+    &-tags {
+      font-size: 5vw;
     }
   }
 }

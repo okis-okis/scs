@@ -1,9 +1,9 @@
 .find-us {
   &__container {
-    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    margin: 10px 5%;
   }
 
   &__header {
@@ -41,6 +41,19 @@
 
     &__text {
       grid-row: 1/2;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .find-us {
+    font-size: 5vw;
+    &__header {
+      font-size: 8vw;
+    }
+
+    &__body {
+      font-size: 5vw;
     }
   }
 }

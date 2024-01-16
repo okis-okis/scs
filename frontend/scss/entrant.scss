@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 300px;
     gap: 20px;
-    margin: 10px 20px;
+    margin: 10px 5%;
 
     &__about {
       h2 {
@@ -33,7 +33,7 @@
     &-content {
       display: flex;
       flex-direction: column;
-      margin: 10px 20px;
+      margin: 10px 5%;
 
       &__links {
         order: -1;
@@ -61,4 +61,14 @@
 .entrant-btn:link {
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .entrant-container {
+    font-size: 5vw;
+
+    h1 {
+      font-size: 8vw;
+    }
+  }
 }

@@ -3,16 +3,13 @@
 .post {
   display: flex;
   flex-direction: column;
-
   margin-bottom: 10px;
 
   &s__container {
-    margin-top: 20px;
+    margin: 0px 5% 10px 5%;
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
     justify-content: center;
-    width: 100%;
 
     &__title {
       color: colors.$title-color;
@@ -26,7 +23,7 @@
     &-posts {
       margin-top: 10px;
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 75% 25%;
 
       &-find {
         grid-column-start: 1;
@@ -272,14 +269,6 @@
     &s__container {
       &__mobile_filter {
         display: block;
-        // position: fixed;
-        // display: inline;
-        // width: 100%;
-        // height: 100vh;
-        // top: 0px;
-        // left: 0px;
-        // transition: all 0.3s ease-in-out;
-        // display: none;
 
         &__button {
           top: 90px;
@@ -312,13 +301,6 @@
         flex-direction: column;
 
         &-find {
-          // $w: 100vw;
-          // $buttonSize: 50px;
-          // position: fixed;
-          // z-index: 50;
-          // width: calc(#{$w} - #{$buttonSize});
-          // left: -100%;
-          // top: 80px;
           display: none;
           transition: all 0.3s ease-in-out;
           &-order {
@@ -328,18 +310,11 @@
         }
 
         &-find-active {
-          // z-index: 50;
-          // left: 0%;
           display: block;
           transition: all 0.3s ease-in-out;
         }
 
         &-filter {
-          // position: fixed;
-          // z-index: 50;
-          // width: 100%;
-          // left: -100%;
-          // top: 220px;
           display: none;
           transition: all 0.3s ease-in-out;
         }
@@ -393,6 +368,7 @@
 
 .pagination {
   padding: 30px 0;
+  font-size: 16px;
   margin: 0px auto;
 }
 
@@ -422,6 +398,54 @@
       background-color: colors.$button-background-color;
       border-radius: 100%;
       color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .post {
+    &s__container {
+      font-size: 5vw;
+      &__mobile_filter {
+        font-size: 5vw;
+      }
+
+      &-posts {
+        &-find {
+          &-order {
+            &-button {
+              font-size: 5vw;
+            }
+            &-search-bar {
+              input {
+                height: 5vh;
+                font-size: 6vw;
+              }
+            }
+          }
+        }
+        &-filter {
+          p {
+            font-size: 8vw;
+          }
+        }
+      }
+
+      select {
+        width: 80vw;
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .pagination {
+    padding: 10px 0;
+    ul {
+      li {
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+      }
     }
   }
 }

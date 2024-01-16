@@ -221,14 +221,35 @@
           object-fit: cover;
           margin-right: 10px;
         }
-        // &__info {
-        //   display: flex;
-        //   flex-direction: column;
+      }
+    }
+  }
+}
 
-        //   &__title {
-        //     margin-bottom: 10px;
-        //   }
-        // }
+@media only screen and (max-width: 500px) {
+  .student-container {
+    font-size: 5vw;
+    h1 {
+      font-size: 8vw;
+    }
+    &-content__links__blocks {
+      p {
+        font-size: 8vw;
+      }
+
+      &__btn {
+        font-size: 4vw;
+        a {
+          padding: 5px;
+        }
+      }
+    }
+    &-work-info__text {
+      h2 {
+        font-size: 8vw;
+      }
+      p {
+        font-size: 5vw;
       }
     }
   }

@@ -43,3 +43,9 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 300px) {
+  footer {
+    font-size: 5vw;
+  }
+}

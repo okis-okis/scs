@@ -1,8 +1,16 @@
 .teacher {
+  &-wrapper {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin: 0px auto;
+    max-width: 1200px;
 
     h1 {
       align-self: center;
@@ -21,7 +29,6 @@
       color: black;
     }
     padding: 10px 10px;
-    justify-content: center;
 
     &__image {
       margin: 0px 10px;
@@ -34,7 +41,7 @@
     }
 
     &-content {
-      width: 40%;
+      width: 100%;
       &-tituls,
       &-info {
         margin-bottom: 10px;
@@ -75,6 +82,7 @@
 
   &-person:nth-of-type(odd) {
     margin-right: auto;
+    justify-content: left;
 
     .teacher-person__image {
       order: 0;
@@ -94,20 +102,45 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   .teacher {
+    &__container {
+      h1 {
+        font-size: 5vw;
+      }
+    }
+    &-person:first-of-type {
+      margin: 10px;
+    }
+    &-person:nth-of-type(odd) {
+      margin: 10px;
+    }
     &-person {
       display: flex;
       flex-direction: column;
+      padding: 0px;
+      margin: 10px;
 
       &__image {
         align-self: center;
         order: 0;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
 
         img {
           align-self: center;
-          width: 300px;
+          width: 80vw;
           height: auto;
+        }
+      }
+
+      &-content {
+        font-size: 5vw;
+
+        &-name__text {
+          font-size: 5vw;
         }
       }
     }
